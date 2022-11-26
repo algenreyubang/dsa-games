@@ -16,6 +16,7 @@ def register():
     if Password != Password1:
         print("passwords dont match, restart")
         register()
+        
     else:
         if len(Password)<=7:
             print("password too weak, restart")
@@ -49,8 +50,11 @@ def access():
             if data[Username]:
                 try:
                     if Password == data[Username]:
+                        
                         print("login success")
                         print("hi,", Username)
+                        from menu import menu
+                        menu
                     else:
                         print("Password or username incorrect") 
                 except:
@@ -73,8 +77,8 @@ def home(option=None):
         print("please enter an option")   
         
 home()  
-from menu import menu
-menu
+# from menu import menu
+# menu
 
 
 
