@@ -69,10 +69,10 @@ def access():
 
 # home
 def home(option=None):
-    option = input ("login:  |  signup:  |  log out: ")
+    option = input ("login:  |  register:  |  log out: ")
     if option == "login":
         access()
-    elif option == "signup":
+    elif option == "register":
         register()
     elif option == "log out":
         return True    

@@ -18,7 +18,7 @@ def stack():
         
     else: print("error")
     
-        
+#  ganito yung mechanics kuys may numbers 1-5 na naka jumball then ang gagawin ni user is aayusin from 0-5 
         
     
         
