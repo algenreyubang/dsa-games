@@ -1,4 +1,5 @@
 print("welcome to our game project")
+# register
 def register():
     db = open("database.txt" ,"r")
     Username = input("Create username;")
@@ -29,7 +30,7 @@ def register():
             db.write(Username+", "+Password+"\n")
             print("Success")
 
-#register()
+
 
 def access():
     db = open("database.txt" ,"r")
@@ -68,11 +69,13 @@ def access():
 
 # home
 def home(option=None):
-    option = input ("login:  | signup:  ")
+    option = input ("login:  |  signup:  |  log out: ")
     if option == "login":
         access()
     elif option == "signup":
         register()
+    elif option == "log out":
+        return True    
     else:
         print("please enter an option")   
         
