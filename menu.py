@@ -52,9 +52,11 @@ def menu():
         print(setthings())
     elif selection_input == '3':
         print("you entered how to play") 
-        secondretuner()  
-        
-    else:
-     selection_input == '4'
-     exit
+        secondretuner()      
+    elif selection_input == '4':
+        exit()
+    else: 
+        print("choto erroi, yamete kudasai oni-chan!! ")
+        print("FBI open up onichan!! ")
+        exit()
 menu()            
