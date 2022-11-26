@@ -1,4 +1,5 @@
 print("welcome to our game project")
+print("main menu")
 # register
 def register():
     db = open("database.txt" ,"r")
